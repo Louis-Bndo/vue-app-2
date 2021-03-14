@@ -1,15 +1,15 @@
 <template>
-  <div class="global">
-      <img src="../assets/mapFR.svg" class="map">
-  </div>
+	<section class="examples">
+		<link-map />
+	</section>
 </template>
 
-<style scoped>
-
-.map{
-    height: 1000px;
-    width: 100%;
-    text-align: center;
+<script>
+import LinkMap from '@/components/link-map.vue'
+export default {
+	name: 'App',
+	components: {
+		LinkMap
+	},
 }
-
-</style>
+</script>
